@@ -13,7 +13,7 @@
   -->
  
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.generic.cookiesNotification.displayName">Cookies Alert</message>
-  <message key="plugins.generic.cookiesNotification.description">Show cookie alert for users</message>
+	<message key="plugins.generic.cookiesNotification.displayName">Cookies Notification</message>
+  <message key="plugins.generic.cookiesNotification.description">Show cookie notification for users</message>
   <message key="plugins.generic.cookiesNotification.alert">This site uses cookies to store user session data.</message>
 </locale>
