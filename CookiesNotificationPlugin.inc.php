@@ -55,7 +55,8 @@ class CookiesNotificationPlugin extends GenericPlugin {
 		$output =& $params[2];
 
 		if (isset($_GET['acceptCookies'])) {
-			$session->setSessionVar('cookiesAccepted', (int) $_GET['acceptCookies']);
+			$acceptCookies = filter_var($_GET['acceptCookies'], FILTER_SANITIZE_STRING);
+			$session->setSessionVar('cookiesAccepted', (int) $acceptCookies);
 		}
 
 		if ($session->getSessionVar('cookiesAccepted') != 1 ) {
